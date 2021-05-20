@@ -1,0 +1,1126 @@
+/*Estilos que corresponden a todo el diseño de la pagina web, damos por echo, que quien modifica este proyecto tiene los 
+conocimientos de nivel intermedios en CSS3 y Responsive web desing, con conocimientos en flexbox y maquetación mediante floats. por lo cual no daremos una explicación de para que sirve cada selector o su propiedad, 
+por lo cual nos limitaremos a indicar solo de que parte es este codigo en las estructuras html.
+*/
+
+*:after,
+*:before {
+  box-sizing: border-box;
+}/*Comenzaremos siempre con la propiedad border box para los margenes y paddings*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif; /*reiniciamos a 0, por completo todos los margenes y paddings que usan los navegadores por default 
+  y usamos el tipo de fuente Nunito, si no existe nunito, procedera a usar sans-serif (letra por defecto en todos los navegadores) */
+  
+}
+
+/*-----------CSS del Index.php---------------------
+Nos enfocamos en el modelo de desarrollo RESPONSIVE WEB DESING usando la metodologia MOVILE FIRST
+
+*/
+/*Creamos nuestra media query para pantallas de 360px, para futuras entregas se podrian agregar mas pantallas. solo usamos 360px y 992px por falta de tiempo*/
+@media only screen and (min-width: 360px) {
+  body.index {
+    background-image: url("../img/banner.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 196vw 70vh;
+  }
+  .cuerpo-index {
+    width: 100vw;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    height: 85vh;
+    }
+    article.preguntas{
+      margin-top:75px;
+      width:50% ;
+      text-align: center;
+      font-family: 'Nunito', sans-serif;
+    
+    }
+    nav.bg-dark{
+      background:rgba(0, 66, 97, 1)  !important; 
+      
+  }
+  /*----------Footer-------------*/
+  footer.index{
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: rgba(0, 66, 97,1) ;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    position: fixed;
+    bottom:0;
+    padding: 2px 0;
+    color: #ffffff;
+    box-shadow: 0 0 17px #333;
+  
+  }
+  /*--------Color de barra de navegacion en pantallas pequeñas--------*/
+  nav.bg-darkcito{
+    background:rgba(0, 66, 97, 1)  !important; 
+  
+  }
+}
+/*mete otro media query*/
+/*******Media query del index pero para pantallas de 768px*******/
+@media only screen and (min-width: 768px) {
+  body.index {
+    background-image: url("../img/banner.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100vw 85vh;
+  }
+  .cuerpo-index {
+    width: 100vw;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    height: 85vh;
+    }
+  article.preguntas{
+      margin-top:75px;
+      width:50% ;
+      
+      text-align: center;
+      font-family: 'Nunito', sans-serif;
+    
+    }
+}
+/*******Media query del index pero para pantallas de grandes 992px en adelante*******/
+
+@media only screen and (min-width: 992px) {
+
+
+  body.index {
+    background-image: url("../img/banner.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100vw 103vh;
+  }
+  /*caja general del index despues del header y antes de footer*/
+  .cuerpo-index {
+  width: 100vw;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+  height: 90vh;
+  }
+  .preguntas{
+    margin-top:1%;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+  
+  }
+  .preguntas p{
+    margin-bottom: 0;
+  
+  }
+  .preguntas a{
+    text-decoration: none;
+    
+  
+  }
+  nav.bg-dark{
+    background:rgba(0, 66, 97, 0.699)  !important; 
+    
+}
+nav.bg-darkcito{
+  background:rgba(0, 66, 97, 1)  !important; 
+
+}
+nav div.container-fluid a.navbar-brand{
+  font-family: 'Nunito', sans-serif;
+
+}
+footer.index{
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: rgba(0, 66, 97, 0.699) ;
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  position: fixed;
+  bottom:0;
+  padding: 2px 0;
+  color: #ffffff;
+  box-shadow: 0 0 17px #333;
+
+}
+  }
+  
+  
+  
+  
+  /*termina media query de index*/
+  
+/*Preguntas del index, se dejan fuera de los media querys, por si hubiese una perdida en cuanto a peso de selectores, en la hoja de cascada*/
+.preguntas{
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+
+}
+.preguntas p{
+  margin-bottom: 0;
+
+}
+.preguntas a{
+  text-decoration: none;
+  
+
+}
+input.altaenv{
+    background-color: rgb(8,90,129);
+
+}
+input.altaenv:hover{
+  background-color: rgb(13,106,151);
+
+}
+
+
+
+/*FOOTER*/
+
+footer {
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: rgba(0, 66, 97, 1) ;
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  bottom:0;
+  padding: 2px 0;
+  color: #ffffff;
+	box-shadow: 0 0 17px #333;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.clearfix::before {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+body section {
+  width: 200px;
+}
+body.login img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  top: 100px;
+  left: calc(48% - 50px);
+}
+
+/*media queris de registro*/
+@media only screen and (min-width: 340px) {
+  .container.registro {
+    margin-top: 15px;
+  }
+  form.form-group {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  label.alta{
+    font-size: 22px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+  }
+  
+  h2{
+    font-family: 'Nunito', sans-serif;
+  }
+  input.entrada{
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #000;
+  }
+  input:focus {
+    border: 1px solid #1668c4;
+  }
+  .altaenv[type="submit"] {
+   margin: 0 auto;
+    display: block;
+    margin-bottom: 20px;
+    width: 50% !important;
+    
+  }
+  
+  .cajar1 {
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 25px;  
+  }
+  
+  
+  .cajar2{
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 25px;
+  }
+  
+  .cajarcostos {
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    border: 1px solid #ccc;
+  }
+  .cajarcostos label {
+    width: auto;
+    display: inline-block;
+    margin: 15px;
+  }
+  .cajarcostos input {
+    width: auto;
+    display: inline-block;
+    margin: 15px;
+  }
+  
+  .cajaremp {
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  .cajaremp label {
+    width: auto;
+    display: inline;
+    margin: 5px;
+    font-size: 19px;
+  }
+  
+  .cajaremp input {
+    display: inline-block;
+    margin: 5px;
+    font-size: 22px;
+  }
+  
+  div.contacto{
+    border: 1px solid #ccc;
+  
+  
+  }
+ 
+  .registro input {
+    text-transform: uppercase;
+  }
+  
+}
+@media only screen and (min-width: 768px){
+
+}
+/*Css de registro para pantallas mas grandes, corresponde a registro.php*/
+@media only screen and (min-width: 992px) {
+
+  .container.registro {
+    margin-top: 55px;
+  }
+  form.form-group {
+    width: 100%;
+    border: 1px solid #ccc;
+    margin: 20px;
+    padding: 20px;
+  }
+  label.alta{
+    font-size: 22px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+  }
+  h2{
+    font-family: 'Nunito', sans-serif;
+  }
+  input.entrada{
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #000;
+  }
+  input:focus {
+    border: 1px solid #1668c4;
+  }
+  .altaenv[type="submit"] {
+   margin: auto;
+    display: block;
+    margin-bottom: 0px;
+    width: 22% !important;
+    
+  }
+  
+  .cajar1 {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 25px;  
+  }
+  
+  
+  .cajar2{
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 25px;
+  }
+  
+  .cajarcostos {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    display: block;
+    border: 1px solid #ccc;
+  }
+  .cajarcostos label {
+    width: auto;
+    display: inline;
+    margin: 15px;
+  }
+  .cajarcostos input {
+    width: auto;
+    display: inline;
+    margin: 15px;
+  }
+  
+  .cajaremp {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    display: block;
+    border: 1px solid #ccc;
+  }
+  .cajaremp label {
+    width: auto;
+    display: inline;
+    margin: 5px;
+    font-size: 19px;
+  }
+  
+  .cajaremp input {
+    width: auto;
+    display: inline;
+    margin: 5px;
+  }
+  
+  div.contacto{
+    border: 1px solid #ccc;
+  
+  
+  }
+ 
+  .registro input {
+    text-transform: uppercase;
+  }
+  
+
+
+
+
+
+
+
+
+}
+/*css de formulario de registro */
+
+.tablap {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+
+/*Css de formulario login.php y recuperacontrasena.php*/
+
+
+
+@media only screen and (min-width: 360px) {
+
+body.login{
+  font-family: 'Nunito', sans-serif;
+	background-image: url("../img/bg.png");
+	background-repeat: no-repeat;
+	overflow: auto;
+	background-size: 100vw 100vh;
+  
+}
+
+.contenido {
+	width: 350px;
+  height: auto;
+	margin:7% auto;
+	border-radius: 25px;
+	background-color: rgba(0,0,0,0.1);
+	box-shadow: 0 0 17px #333;
+}
+
+/*recupera tu cuenta*/
+div.contenido-cuenta{
+	width: 350px;
+  height: auto;
+	margin:7% auto;
+	border-radius: 25px;
+	background-color: rgba(0,0,0,0.1);
+	box-shadow: 0 0 17px #333;
+  padding-bottom: 29px;
+  
+}
+.header {
+	text-align: center;
+	padding-top: 75px;
+}
+
+.header h1 {
+	color: white;
+	font-size: 45px;
+	margin-bottom: 60px;
+}
+
+.main {
+	text-align: center;
+}
+
+.main input, button.iniciar-sesion {
+	width: 300px;
+	height: 40px;
+	border:none;
+	outline: none;
+	padding-left: 40px;
+	box-sizing: border-box;
+	font-size: 15px;
+	color: #333;
+	margin-bottom: 40px;
+}
+button.iniciar-sesion {
+  margin-bottom:0  !important;
+  color: white;
+}
+.links a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+   font-size: 18px;
+}
+
+.main button {
+	padding-left: 0;
+	background-color:rgb(0,66,97);
+	letter-spacing: 1px;
+	font-weight: bold;
+	margin-bottom: 70px;
+}
+
+.main button:hover {
+	box-shadow: 2px 2px 5px #555;
+	background-color:rgb(13,106,151);
+}
+.main input:hover {
+	box-shadow: 2px 2px 5px #555;
+	background-color: #ddd;
+}
+
+.main span {
+	position: relative;
+}
+
+.main i {
+	position: absolute;
+	left: 15px;
+	color: #333;
+	font-size: 16px;
+	top:0;
+}
+
+
+
+}
+@media only screen and (min-width: 768px) {
+body.login{
+  font-family: 'Nunito', sans-serif;
+	background-image: url("../img/bg.png");
+	background-repeat: no-repeat;
+	overflow: auto;
+	background-size: 100vw 200vh;
+  
+}
+
+.contenido {
+	width: 380px;
+  height: auto;
+	margin:7% auto;
+	border-radius: 25px;
+	background-color: rgba(0,0,0,0.1);
+	box-shadow: 0 0 17px #333;
+}
+
+/*recupera tu cuenta*/
+div.contenido-cuenta{
+	width: 380px;
+  height: auto;
+	margin:7% auto;
+	border-radius: 25px;
+	background-color: rgba(0,0,0,0.1);
+	box-shadow: 0 0 17px #333;
+  padding-bottom: 29px;
+  
+}
+}
+@media only screen and (min-width: 992px) {
+
+
+body.login{
+  font-family: 'Nunito', sans-serif;
+	background-image: url("../img/bg.png");
+	background-repeat: no-repeat;
+	overflow: hidden;
+	background-size: 100vw 100vh;
+  
+}
+
+.contenido {
+	width: 380px;
+  height: auto;
+	margin:7% auto;
+	border-radius: 25px;
+	background-color: rgba(0,0,0,0.1);
+	box-shadow: 0 0 17px #333;
+}
+
+/*recupera tu cuenta*/
+div.contenido-cuenta{
+	width: 380px;
+  height: auto;
+	margin:7% auto;
+	border-radius: 25px;
+	background-color: rgba(0,0,0,0.1);
+	box-shadow: 0 0 17px #333;
+  padding-bottom: 29px;
+  
+}
+/*css de loggin*/
+.header {
+	text-align: center;
+	padding-top: 75px;
+}
+
+.header h1 {
+	color: white;
+	font-size: 45px;
+	margin-bottom: 60px;
+}
+
+.main {
+	text-align: center;
+}
+
+.main input, button.iniciar-sesion {
+	width: 300px;
+	height: 40px;
+	border:none;
+	outline: none;
+	padding-left: 40px;
+	box-sizing: border-box;
+	font-size: 15px;
+	color: #333;
+	margin-bottom: 40px;
+}
+button.iniciar-sesion {
+  margin-bottom:0  !important;
+  color: white;
+}
+.links a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+   font-size: 18px;
+}
+
+.main button {
+	padding-left: 0;
+	background-color:rgb(0,66,97);
+	letter-spacing: 1px;
+	font-weight: bold;
+	margin-bottom: 70px;
+}
+
+.main button:hover {
+	box-shadow: 2px 2px 5px #555;
+	background-color:rgb(13,106,151);
+}
+.main input:hover {
+	box-shadow: 2px 2px 5px #555;
+	background-color: #ddd;
+}
+
+.main span {
+	position: relative;
+}
+
+.main i {
+	position: absolute;
+	left: 15px;
+	color: #333;
+	font-size: 16px;
+	top:0;
+}
+}
+/*media query parte de la documentación de proveedor*/
+@media only screen and (min-width: 360px) {
+/*css de subir documentos proveedor */
+body.subir-documentacion{
+  background-image: url(../img/bg.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+  
+}
+div.bloque1{
+  float: left;
+  display: block;
+  width: 100%;
+}
+div.bloque2{
+float: right;  
+width: 100%;
+}
+
+.bloque1 input{
+display: block;
+align-items: center;
+}
+.bloque2 input{
+  display: block;
+
+}
+form.subir{
+    box-shadow: 0 0 17px #333;
+    border: none;
+font-size: 15px;
+
+}
+.envia{
+  font-size: 15px;
+    margin-top: 0px;
+  margin-bottom: 60px;
+
+}
+
+}
+@media only screen and (min-width: 768px) {
+
+}
+@media only screen and (min-width: 992px) {
+/*css de subir documentos proveedor background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),*/
+body.subir-documentacion{
+  background-image: url(../img/bg.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+  
+}
+div.bloque1{
+  float: left;
+  display: block;
+  width: 50%;
+}
+div.bloque2{
+float: right;  
+width: 50%;
+}
+
+.bloque1 input{
+display: block;
+align-items: center;
+}
+.bloque2 input{
+  display: block;
+
+}
+form.subir{
+    box-shadow: 0 0 17px #333;
+    border: none;
+font-size: 15px;
+
+}
+.envia{
+  margin-top: 40px;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+}
+
+
+
+
+/*******************************
+********************************/
+
+
+/*footable */
+
+.table-dark thead{
+position: fixed;
+}
+.table-dark td{
+
+background-color: rgba(0, 66, 97, 0.699);
+
+}
+div.float-right a{
+  list-style: none;
+  text-decoration: none;
+  color: #000;
+}
+div.filtrado{
+  margin: 15px;
+}
+
+
+
+
+/*parte de los compradores y compradores estandard*/
+
+/*estilos al email individual vista del comprador*/
+form.email-comprador i.email-icono{
+margin:35px;
+color: #0081dc;
+font-size: 90px;
+}
+input.enviar-email{
+background-color: #b2b2b2;
+color: #ffffff;
+margin-top:15px;
+}
+input.enviar-email:hover{
+  color: #ffffff;
+  background-color: #0081dc;
+}
+
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: rgb(0,66,97);
+    border-color: white;
+}
+div.principal{
+  padding: 20px;
+}
+
+
+/*estilos para la barra de navegacion del comprador*/
+.navbar .navbar-brand{
+font-weight: bolder;
+text-transform: uppercase;
+margin-left: 10px;
+}
+.nav-link{
+  font-size: 16px;
+  margin:3px;
+}
+.navbar ul li:hover{
+  color: #000;
+}
+
+.navbar-nav{
+  text-align: left;
+  margin-left: 20px;
+}
+.nav-link i{
+margin-right: 8px;
+font-size: 18px;
+}
+.nav-link i.cerrar-sesion{
+color: #d50000;
+}
+thead.color-tabla td{
+  background-color: rgb(13,106,151) !important;
+  color: #ffffff;
+  font-family: 'Nunito', sans-serif;
+    
+}
+tbody tr td a{
+  text-decoration: none;
+      list-style: none;
+      font-family: 'Nunito', sans-serif;
+
+}
+
+form.formulario-envia i{
+  color: #0081dc;
+margin-top: 35px;
+font-size: 80px;
+
+}
+
+/*estilos para el carousel del index de proveedor. proveedor.php*/
+@media only screen and (min-width: 360px) {
+
+form.comprador i{
+margin-top: 35px;
+font-size: 80px;
+color: rgb(13,106,151);
+}
+form.compradores label{
+text-align:left !important;
+}
+form.compradores input{
+  width: 65%;
+  margin: 0 auto;
+}
+.navbar-carousel{
+      position:relative;
+      width:100%;
+      z-index:10;
+      max-width:100%;
+}
+
+.carousel-inner{
+  margin: 0;
+  width: 100%;
+  height: 50%;
+  
+}
+nav.navita{
+overflow: hidden;
+}
+footer.navita{
+overflow: hidden;
+}
+}
+@media only screen and (min-width: 768px) {
+
+  
+}
+@media only screen and (min-width: 992px) {
+
+form.comprador i{
+margin-top: 35px;
+font-size: 80px;
+color: rgb(13,106,151);
+}
+form.compradores input{
+  width: 25%;
+  margin: 0 auto;
+}
+
+
+
+.navbar-carousel{
+      position:absolute;
+      width:100%;
+      z-index:10;
+      max-width:100%;
+}
+
+.carousel-inner{
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+
+}
+
+
+
+/*subir documentos proveedor, actualizar documentos, actualizaa.php, actualiza.php, actualizrlp.php, */
+@media only screen and (min-width:360px){
+
+  
+form i.excel{
+  margin-top: 35px;
+color: #4caf50;
+  font-size: 80px;
+}
+form i.pdf{
+  margin-top: 35px;
+  color:#d50000;
+  font-size: 80px;
+}
+div.imagen-contenedor{
+  display:block;
+  margin:0;
+  padding: 0;
+  width:100%;
+  
+}
+div.imagen-contenedor img{
+  width: 100%;
+  height: 50vh;
+  margin: 0;
+  padding: 0;
+  
+}
+}
+@media only screen and (min-width:768px){
+
+}
+
+@media only screen and (min-width: 992px){
+
+.fluido{
+    background-color: rgba(0,0,0,0.2);
+}
+div.logo-arriba{
+  margin-top: 90px !important;
+}
+
+.infinity-image-container{
+    background: url('../img/carousel/maquina.png') center no-repeat;
+    background-size: cover;
+    opacity: 0.95;
+    height: auto;
+    background-position: left;
+}
+
+.infinity-form-container{
+    background: #b2b2b2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.infinity-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.infinity-form h6.subir-doc, h5.subir-doc{
+    font-weight: bold;
+    color: rgba(0, 66, 97, 1);
+}
+
+.infinity-form .form-input {
+    position: relative;
+}
+
+.infinity-form .form-input label{
+  color: rgba(0, 66, 97, 1);
+
+}
+.infinity-form .form-input input {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background: transparent;
+    padding-left: 45px;
+    color: rgba(0, 0, 0, 1);
+    font-size: 12px;
+}
+
+.infinity-form .form-input span {
+    position: absolute;
+    top: 8px;
+    padding-left: 20px;
+    color: #777;
+}
+
+.infinity-form .form-input input:focus,
+.infinity-form .form-input input:valid {
+    border: 2px solid #4285f4;   
+}
+
+.infinity-form input[type="checkbox"]:not(:checked) + label:before{
+    background: transparent;
+    border:2px solid white;
+    width: 15px;
+    height: 15px;
+}
+
+.infinity-form .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #4285f4 !important;
+  border:0px;
+}
+
+.infinity-form button[type="submit"] {
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    background: linear-gradient(45deg, #4285f4, #709de8);   /*Button Color*/
+    color: #fff;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.infinity-form button[type="submit"]:hover {
+    background: linear-gradient(45deg, #709de8, #4285f4);   /*Button color when hover*/
+}
+
+.forget-link , .login-link , .register-link {
+    color: #fff;
+    font-weight: bold;
+}
+
+.forget-link:hover , .login-link:hover , .register-link:hover {
+    color: #4285f4;
+    text-decoration: none;
+}
+
+.infinity-form .btn-social {
+    color: white;
+    border: 0;
+    display: inline-block;
+    margin: 0px;
+    margin-right: 10px;
+    font-weight: bold;
+    padding: 0px;
+    margin-bottom: 10px;
+}
+
+.infinity-form .btn-social:hover {
+    text-decoration: underline;
+}
+
+.infinity-form .btn-facebook:hover {
+    color: hsla(221, 40%, 40%, 1);
+}
+
+.infinity-form .btn-google:hover {
+    color: hsla(4, 59%, 47%, 1);
+}
+
+.infinity-form .btn-twitter:hover {
+    color: hsla(195, 78%, 54%, 1);
+}
+/*seguun las indicaciones de Daniel Marquez, debemos cambiar los h de titulos a negritas y a nunito, entonces ponemos este selector con mucho peso para cambiar todos, en todas las paginas*/
+h1,h2,h3,h4,h5,h6{
+  font-weight: bold;
+}
+p{
+  font-family: 'Nunito', sans-serif;
+
+}
+form i.excel{
+color: #4caf50;
+}
+
+div.imagen-contenedor{
+  display: none;
+}
+}

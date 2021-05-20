@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Grupo Alze</title>
+  
+</head>
+
+<nav class="navbar navbar-carousel navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">GRUPO ALZE</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarText">
+      
+    
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+  <div class="imagenes">
+        <li class="nav-item">
+          <a  href="https://www.veladoras-aramo.com/" target="_blank"><img src="img/aramo.png" style="width:100px;" title="Veladoras Aramo" class="empresas-logo"/></a>
+        </li>
+      </div>
+      <div class="imagenes">
+        <li class="nav-item">
+          <a  href="http://www.etiroch.com/" target="_blank"><img src="img/etiroch.png" style="width:100px;" title="Etiroch" class="empresas-logo"/></a>
+        </li>
+      </div>
+
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="compras/index.php">PORTAL DE PROVEEDORES</a>
+        </li>
+      </ul>
+  
+    </div>
+  </div>
+</nav>
+
+<body>
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="4000">
+        <img src="img/grupo-alze1.JPG" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item " data-bs-interval="4000">
+        <img src="img/grupo-alze2.PNG" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="4000">
+        <img src="img/grupo-alze3.JPG" class="d-block w-100" alt="...">
+      </div>
+    
+    <div class="carousel-item" data-bs-interval="4000">
+      <img src="img/grupo-alze4.PNG" class="d-block w-100" alt="...">
+    </div>
+  </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+
+
+
+<footer class="index">
+  © 2021 - GRUPO ALZE - Todos los derechos reservados.
+  </footer>
+<!--<script src="../js/funciones.js"></script>
+-->
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+
+
+<style>
+
+
+
+
+
+@media only screen and (min-width: 992px)  {
+  nav{
+    overflow: hidden;
+   
+    
+  }
+   div.imagenes,a.nav-link{
+margin-left: 256px;
+display: block;
+ }
+
+.navbar-carousel{
+      position:relative;
+      width:100%;
+      z-index:10;
+     
+}
+
+.carousel-inner{
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+}
+nav.bg-dark{
+    background-color:rgba(0, 0, 0, 0.4)  !important; 
+    position: absolute;
+}
+footer.index{
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: rgba(0, 0, 0,0.5) ;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    position: fixed;
+    bottom:0;
+    padding: 2px 0;
+    color: #ffffff;
+    box-shadow: 0 0 17px #333;
+  
+  }
+  img.d-block{
+    width: 100vw;
+    height:100vh;
+  }
+  a.navbar-brand{
+margin-left: 8px;
+  }
+}
+
+
+
+@media only screen and (min-width: 340px) {
+
+
+.navbar-carousel{
+      position:relative;
+      width:100%;
+      z-index:10;
+     
+}
+
+.carousel-inner{
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+}
+nav.bg-dark{
+    background-color:rgba(0, 0, 0, 0.4)  !important; 
+    position: absolute;
+}
+footer.index{
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: rgba(0, 66, 97,1) ;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    position: fixed;
+    bottom:0;
+    padding: 2px 0;
+    color: #ffffff;
+    box-shadow: 0 0 17px #333;
+  
+  }
+
+  a.navbar-brand{
+margin-left: 8px;
+  }
+}
+
+
+
+
+</style>
+</html>
